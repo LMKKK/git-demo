@@ -30,6 +30,7 @@ jobs:
           git clone https://github.com/LMKKK/git-demo.git
           pwd
           ls -lh
+          cd git-demo/
       
       - name: compile
         run: |
