@@ -29,10 +29,12 @@ jobs:
         run: |
           git clone https://github.com/LMKKK/git-demo.git
           pwd
+          ls -lh
       
       - name: compile
         run: |
           pwd
+          ls -lh
           go build -o ./app .
 
       - name: run app
