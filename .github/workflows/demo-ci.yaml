@@ -31,7 +31,9 @@ jobs:
           pwd
       
       - name: compile
-        run: go build -o ./app .
+        run: |
+          pwd
+          go build -o ./app .
 
       - name: run app
         run: ./app
