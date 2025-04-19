@@ -40,10 +40,13 @@ jobs:
           go build -o ./app .
 
       - name: run app
-        run: ./app
+        run: |
+          cd git-demo
+          ./app
 
       # Runs a set of commands using the runners shell
       - name: clean
         run: |
           pwd
+          cd git-demo
           rm -rf app
