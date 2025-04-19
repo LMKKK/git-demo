@@ -35,5 +35,7 @@ jobs:
     steps:
       - name: run app
         run: |
+          pwd
+          ls -lh
           ./app
 
