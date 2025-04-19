@@ -36,6 +36,7 @@ jobs:
         run: |
           pwd
           ls -lh
+          cd git-demo
           go build -o ./app .
 
       - name: run app
