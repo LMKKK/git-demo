@@ -29,26 +29,22 @@ jobs:
 
       - name: clone respositry
         run: |
-          git clone https://github.com/LMKKK/git-demo.git
+          git clone https://github.com/LMKKK/git-demo.git .
           pwd
           ls -lh
-          cd git-demo/
       
       - name: compile
         run: |
           pwd
           ls -lh
-          cd git-demo
           go build -o ./app .
 
       - name: run app
         run: |
-          cd git-demo
           ./app
 
       # Runs a set of commands using the runners shell
       - name: clean
         run: |
           pwd
-          cd git-demo
           rm -rf app
